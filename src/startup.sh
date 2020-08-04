@@ -30,4 +30,4 @@ echo core > /proc/sys/kernel/core_pattern
 echo 1 > /proc/sys/kernel/sched_child_runs_first
 
 # run
-python3 -m phuzzer -c 1 -s ./seed_dir "$(pwd)/harness/build/$binary"
+python3 -m phuzzer -c 1 "$(pwd)/harness/build/$binary"
